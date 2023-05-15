@@ -1,10 +1,10 @@
 export default function cleanSet(set, startString) {
   if (!set || !(set instanceof Set)) {
-    throw new Error('Invalid set input');
+    return '';
   }
 
   if (typeof startString !== 'string') {
-    throw new Error('Invalid startString input');
+    return '';
   }
 
   const cleanedValues = [];
